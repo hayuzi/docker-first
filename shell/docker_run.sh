@@ -13,7 +13,7 @@ docker run -p 3306:3306 --name mymysql -v /opt/mysql/conf:/etc/mysql -v /opt/mys
 # docker run -it --rm hayuzi/mysql:5.6 mysql -h172.17.0.1 -ublog -p
 
 ## php
-docker run -p 9000:9000 --name  myphp-fpm -v /opt/nginx/www/html:/var/www/html -v /opt/php-fpm/etc/php:/usr/local/etc/php -v /opt/php-fpm/logs:/phplogs -d hayuzi/php:7.1-fpm-07
+docker run -p 9000:9000 --name  myphp-fpm -v /opt/nginx/www/html:/var/www/html -v /opt/php-fpm/etc/php:/usr/local/etc/php -v /opt/php-fpm/logs:/phplogs -d hayuzi/php:7.1-fpm-08
 
 ## openresty
 # docker run -d --name mynginx -p 80:80 -v /opt/nginx/conf:/usr/local/openresty/nginx/conf -v /opt/nginx/logs:/usr/local/openresty/nginx/logs -v /opt/nginx/www/html:/usr/local/openresty/nginx/html hayuzi/openresty:1.9.15.1-trusty
